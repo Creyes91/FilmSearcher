@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
         Task{
             
             do{
-                listMoovies = try await MooviesProvider.SearchMooviesBy(name: name)
+                listMoovies = try await MooviesProvider.SearchMoviesBy(name: name)
                 
                 DispatchQueue.main.async {
                     self.TableView.reloadData()
@@ -70,6 +70,20 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
             }
             
         }
+        
+    }
+    
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let DetailView = segue.destination as! DetailViewController
+        let index = TableView.indexPathForSelectedRow!
+        DetailView.id = listMoovies[index.row].imdbID
+        
+        TableView.deselectRow(at: index, animated: true)
+        let cell = tableView(TableView, cellForRowAt: index)
+      
         
     }
 

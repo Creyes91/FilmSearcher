@@ -17,6 +17,7 @@
 		B2D2BFCA2D47E27300AC4614 /* MooviesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2BFC92D47E27300AC4614 /* MooviesProvider.swift */; };
 		B2D2BFCD2D47E81200AC4614 /* MooviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2BFCC2D47E81200AC4614 /* MooviesTableViewCell.swift */; };
 		B2D2BFCF2D47F0C700AC4614 /* UIimageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2BFCE2D47F0C700AC4614 /* UIimageViewExtensions.swift */; };
+		B2D2BFD12D47FA2700AC4614 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2BFD02D47FA2700AC4614 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B2D2BFC92D47E27300AC4614 /* MooviesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooviesProvider.swift; sourceTree = "<group>"; };
 		B2D2BFCC2D47E81200AC4614 /* MooviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooviesTableViewCell.swift; sourceTree = "<group>"; };
 		B2D2BFCE2D47F0C700AC4614 /* UIimageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIimageViewExtensions.swift; sourceTree = "<group>"; };
+		B2D2BFD02D47FA2700AC4614 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B2D2BFBA2D47DD5A00AC4614 /* ViewController.swift */,
+				B2D2BFD02D47FA2700AC4614 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				B2D2BFBD2D47DD5A00AC4614 /* SceneDelegate.swift in Sources */,
 				B2D2BFCA2D47E27300AC4614 /* MooviesProvider.swift in Sources */,
 				B2D2BFBE2D47DD5A00AC4614 /* ViewController.swift in Sources */,
+				B2D2BFD12D47FA2700AC4614 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

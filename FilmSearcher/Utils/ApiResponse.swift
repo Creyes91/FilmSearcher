@@ -20,12 +20,18 @@ struct Moovies : Codable
     let imdbID: String
     let Tipe: String
     let Poster: String
+    let Plot: String?
+    let RunTime: String?
+    let Director: String?
+    let Genre: String?
+    let Country: String?
     
     
     
-    private enum CodingKeys : String,CodingKeys
+    
+   private enum CodingKeys : String, CodingKey
     {
-        case Tittle,Year,imdbID
+        case Title,Year,imdbID,Poster,Plot,RunTime,Director,Genre,Country
         case Tipe = "Type"
     }
     

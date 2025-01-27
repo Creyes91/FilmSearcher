@@ -10,7 +10,7 @@ import Foundation
 class MooviesProvider {
     
     
-    static func SearchMooviesBy (name: String) async throws -> [Moovies]
+    static func SearchMoviesBy (name: String) async throws -> [Moovies]
     {
         let url = URL(string: "https://www.omdbapi.com/?s=\(name)&apikey=4f835f7f")!
         
@@ -18,11 +18,24 @@ class MooviesProvider {
         
         let (data,_) = try await session.data(from: url)
         
-        let Moovies = try JSONDecoder().decode(MooviesResponse.self, from: data)
+        let Movies = try JSONDecoder().decode(MooviesResponse.self, from: data)
         
-        return Moovies.Search
+        return Movies.Search
         
     }
     
-    static func SearchmoovieById (id: String) async throws -> 
+    static func SearchMovieById (id: String) async throws -> Moovies
+    {
+        let url = URL(string: "https://www.omdbapi.com/?i=\(id)&apikey=4f835f7f")!
+        
+        let session = URLSession.shared
+        
+        let (data,_) = try await session.data(from: url)
+        
+        let movie = try JSONDecoder().decode(Moovies.self, from: data)
+        
+        return movie
+        
+        
+    }
 }

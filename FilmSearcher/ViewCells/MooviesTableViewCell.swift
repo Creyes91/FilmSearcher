@@ -28,6 +28,8 @@ class MooviesTableViewCell: UITableViewCell {
     
     func render (moovie: Moovies) {
         TittleTextField.text = moovie.Title
+        YearTextField.text = moovie.Year
+        posterImageView.loadFrom(url: moovie.Poster)
         
     }
 
