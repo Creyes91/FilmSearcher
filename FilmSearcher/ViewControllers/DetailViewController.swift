@@ -58,7 +58,6 @@ class DetailViewController: UIViewController {
         DirectorTextField.text = movie.Director
         genreTextField.text = movie.Genre
         countryTextField.text = movie.Country
-        
         plotTextField.text = movie.Plot
         
     }
