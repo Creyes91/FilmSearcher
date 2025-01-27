@@ -23,4 +23,6 @@ class MooviesProvider {
         return Moovies.Search
         
     }
+    
+    static func SearchmoovieById (id: String) async throws -> 
 }
